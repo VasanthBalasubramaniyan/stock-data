@@ -15,10 +15,8 @@ The project follows a simple yet production-style structure:
    - Source files stored as parquet for reproducibility.
 
 2. **Data Transformation**
-   - Used **Pandas** for cleaning and preprocessing:
-     - Renamed columns  
-     - Fixed missing values  
-     - Converted data types (date, numeric fields)
+   - Used **Pandas** for cleaning and preprocessing: 
+     - Converted data into year-wise (date, numeric fields)
      - Ensured consistent schema for database loading
 
 3. **Data Storage**
@@ -26,7 +24,7 @@ The project follows a simple yet production-style structure:
    - Defined two core tables:
      - `symbols` → Contains symbol metadata  
      - `daily_data` → Contains daily stock price information
-   - Loaded cleaned data into PostgreSQL using **SQLAlchemy** and **psycopg2**
+   - Loaded cleaned data into PostgreSQL using **SQLAlchemy**
 
 4. **Data Analysis**
    - Queried the database directly from Python:
@@ -36,7 +34,7 @@ The project follows a simple yet production-style structure:
    - Used SQL queries with `pandas.read_sql()` for analysis.
 
 5. **Visualization**
-   - Used **Matplotlib** and **Seaborn** to visualize:
+   - Used **Matplotlib** and **Seaborn** to visualization
      
 ---
 
@@ -81,5 +79,6 @@ The project follows a simple yet production-style structure:
   - Visualize insights
 
 ---
+
 
 
