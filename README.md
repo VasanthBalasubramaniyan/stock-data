@@ -37,17 +37,7 @@ The project follows a simple yet production-style structure:
 
 5. **Visualization**
    - Used **Matplotlib** and **Seaborn** to visualize:
-     - Closing price trends over time
-     - Volume distribution
-     - Correlation between Open, High, Low, Close prices
-   - Example visualization:
-
-     ```python
-     sns.lineplot(data=df, x='date', y='close', hue='symbol')
-     plt.title('Stock Closing Prices Over Time')
-     plt.show()
-     ```
-
+     
 ---
 
 ## 🧰 Tech Stack
@@ -65,5 +55,29 @@ The project follows a simple yet production-style structure:
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/VasanthBalasubramaniyan/stock-data.git
    cd nse-data-engineering
+2. **Install dependencies**
+   ```
+   pip install -r requirements.txt
+   ```
+4. **Configure PostgreSQL**
+- Create a new database named `nse_data` in your PostgreSQL instance.
+- Update your connection string in the Jupyter Notebook to match your username and password:
+
+  ```
+  from sqlalchemy import create_engine
+  engine = create_engine("postgresql+psycopg2://username:password@localhost:5432/nse_data")
+  ```
+
+4. **Run the Notebook**
+- Start Jupyter Notebook:
+  ```
+  jupyter notebook
+  ```
+- Open the notebook(s) and execute the cells in order to:
+  - Create tables
+  - Load data
+  - Visualize insights
+
+---
