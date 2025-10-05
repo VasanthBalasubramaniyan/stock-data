@@ -12,7 +12,7 @@ The project follows a simple yet production-style structure:
 
 1. **Data Extraction**
    - Downloaded or scraped NSE data (symbols and daily stock prices).
-   - Source files stored as CSVs for reproducibility.
+   - Source files stored as parquet for reproducibility.
 
 2. **Data Transformation**
    - Used **Pandas** for cleaning and preprocessing:
@@ -81,4 +81,5 @@ The project follows a simple yet production-style structure:
   - Visualize insights
 
 ---
+
 
