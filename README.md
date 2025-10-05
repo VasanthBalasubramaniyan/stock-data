@@ -46,7 +46,7 @@ The project follows a simple yet production-style structure:
 |--------|-------------|
 | Language | Python 3.x |
 | Database | PostgreSQL |
-| Libraries | Pandas, Numpy, SQLAlchemy, Psycopg2, Matplotlib, Seaborn |
+| Libraries | Pandas, Numpy, SQLAlchemy, Matplotlib, Seaborn |
 | Environment | Jupyter Notebook |
 
 ---
@@ -81,3 +81,4 @@ The project follows a simple yet production-style structure:
   - Visualize insights
 
 ---
+
