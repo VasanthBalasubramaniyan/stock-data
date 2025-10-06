@@ -16,4 +16,4 @@ CREATE TABLE IF NOT EXISTS daily_data (
 
 CREATE INDEX IF NOT EXISTS idx_symbol ON daily_data(symbol);
 CREATE INDEX IF NOT EXISTS idx_date ON daily_data(date);
-CREATE INDEX IF NOT EXISTS idx_datetime ON daily_data(date, time);
+
